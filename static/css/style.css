@@ -1,0 +1,44 @@
+body {
+    background-color: #f8f9fb;
+}
+
+.hero {
+    background: linear-gradient(135deg, #eef3ff 0%, #f8f9fb 100%);
+}
+
+.hero-art {
+    aspect-ratio: 4 / 3;
+    background: linear-gradient(135deg, #dbe6ff 0%, #f1f5ff 100%);
+}
+
+.hero-art i {
+    font-size: 8rem;
+}
+
+.product-img {
+    height: 180px;
+    background: linear-gradient(135deg, #e9eefb 0%, #f6f8fd 100%);
+    color: #8aa0d6;
+    font-size: 4rem;
+}
+
+.product-card {
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 .75rem 1.5rem rgba(0, 0, 0, .08) !important;
+}
+
+.icon-circle {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(13, 110, 253, .1);
+    color: var(--bs-primary);
+    font-size: 1.75rem;
+}

@@ -1,0 +1,101 @@
+{% extends 'base.html' %}
+
+{% block title %}Sobre · Minha Loja{% endblock %}
+
+{% block content %}
+<!-- Cabeçalho -->
+<section class="hero py-5 text-center">
+    <div class="container py-lg-4">
+        <h1 class="display-5 fw-bold mb-3">Sobre nós</h1>
+        <p class="lead text-body-secondary mx-auto" style="max-width: 640px;">
+            Somos uma loja feita por pessoas apaixonadas por oferecer produtos de qualidade
+            com um atendimento próximo e transparente.
+        </p>
+    </div>
+</section>
+
+<!-- Nossa história -->
+<section class="py-5">
+    <div class="container">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+                <div class="hero-art rounded-4 d-flex align-items-center justify-content-center">
+                    <i class="bi bi-shop text-primary"></i>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <h2 class="fw-bold mb-3">Nossa história</h2>
+                <p class="text-body-secondary">
+                    A Minha Loja nasceu em 2020 com um objetivo simples: tornar a compra online fácil,
+                    segura e acessível. Começamos pequenos, com poucos produtos, e hoje atendemos
+                    clientes em todo o Brasil.
+                </p>
+                <p class="text-body-secondary">
+                    Cada item do nosso catálogo é escolhido com cuidado, pensando no que realmente
+                    faz diferença para quem compra.
+                </p>
+                <div class="row text-center mt-4 g-3">
+                    <div class="col-4">
+                        <div class="fs-2 fw-bold text-primary">5k+</div>
+                        <small class="text-body-secondary">Clientes</small>
+                    </div>
+                    <div class="col-4">
+                        <div class="fs-2 fw-bold text-primary">300+</div>
+                        <small class="text-body-secondary">Produtos</small>
+                    </div>
+                    <div class="col-4">
+                        <div class="fs-2 fw-bold text-primary">4.9</div>
+                        <small class="text-body-secondary">Avaliação</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Valores -->
+<section class="py-5 bg-white border-top border-bottom">
+    <div class="container">
+        <h2 class="fw-bold text-center mb-5">Nossos valores</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 border-0 text-center p-3">
+                    <div class="icon-circle mx-auto mb-3"><i class="bi bi-award"></i></div>
+                    <h5 class="fw-bold">Qualidade</h5>
+                    <p class="text-body-secondary mb-0">Trabalhamos apenas com fornecedores confiáveis e produtos testados.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 border-0 text-center p-3">
+                    <div class="icon-circle mx-auto mb-3"><i class="bi bi-people"></i></div>
+                    <h5 class="fw-bold">Atendimento</h5>
+                    <p class="text-body-secondary mb-0">Suporte humano e rápido, antes e depois da sua compra.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 border-0 text-center p-3">
+                    <div class="icon-circle mx-auto mb-3"><i class="bi bi-leaf"></i></div>
+                    <h5 class="fw-bold">Sustentabilidade</h5>
+                    <p class="text-body-secondary mb-0">Embalagens recicláveis e logística pensada para reduzir impactos.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contato -->
+<section class="py-5">
+    <div class="container text-center">
+        <h2 class="fw-bold mb-3">Fale com a gente</h2>
+        <p class="text-body-secondary mb-4">Tem alguma dúvida ou sugestão? Estamos aqui para ajudar.</p>
+        <div class="d-flex flex-wrap justify-content-center gap-3">
+            <a href="mailto:contato@minhaloja.com" class="btn btn-primary btn-lg">
+                <i class="bi bi-envelope"></i> contato@minhaloja.com
+            </a>
+            <a href="#" class="btn btn-outline-success btn-lg">
+                <i class="bi bi-whatsapp"></i> WhatsApp
+            </a>
+        </div>
+    </div>
+</section>
+{% endblock %}

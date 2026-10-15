@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ produto.nome }} · Minha Loja{% endblock %}
+
+{% block content %}
+<section class="py-5">
+    <div class="container">
+        <!-- Breadcrumb -->
+        <nav aria-label="breadcrumb" class="mb-4">
+            <ol class="breadcrumb mb-0">
+                <li class="breadcrumb-item"><a href="{{ url_for('home') }}" class="text-decoration-none">Início</a></li>
+                <li class="breadcrumb-item"><a href="{{ url_for('home') }}#produtos" class="text-decoration-none">Produtos</a></li>
+                <li class="breadcrumb-item active" aria-current="page">{{ produto.nome }}</li>
+            </ol>
+        </nav>
+
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-6">
+                <div class="hero-art rounded-4 d-flex align-items-center justify-content-center">
+                    <i class="bi bi-box-seam text-primary"></i>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <span class="badge bg-primary-subtle text-primary-emphasis rounded-pill px-3 py-2 mb-3">
+                    Código #{{ produto.id }}
+                </span>
+                <h1 class="display-6 fw-bold mb-3">{{ produto.nome }}</h1>
+                <p class="text-body-secondary mb-4">
+                    Descrição completa do produto com seus principais destaques, materiais,
+                    dimensões e demais informações importantes para a sua compra.
+                </p>
+
+                <div class="fs-1 fw-bold text-primary mb-1">
+                    R$ {{ "%.2f"|format(produto.preco) | replace('.', ',') }}
+                </div>
+                <p class="text-body-secondary small mb-4">
+                    ou 10x de R$ {{ "%.2f"|format(produto.preco / 10) | replace('.', ',') }} sem juros
+                </p>
+
+                <div class="d-flex flex-wrap gap-2 mb-4">
+                    <a href="#" class="btn btn-primary btn-lg px-4">
+                        <i class="bi bi-cart-plus"></i> Adicionar ao carrinho
+                    </a>
+                    <a href="{{ url_for('home') }}#produtos" class="btn btn-outline-secondary btn-lg px-4">
+                        Continuar comprando
+                    </a>
+                </div>
+
+                <ul class="list-unstyled text-body-secondary mb-0">
+                    <li class="mb-2"><i class="bi bi-truck text-primary me-2"></i>Frete grátis acima de R$ 199</li>
+                    <li class="mb-2"><i class="bi bi-credit-card text-primary me-2"></i>Até 10x sem juros</li>
+                    <li><i class="bi bi-shield-check text-primary me-2"></i>Compra 100% segura</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
